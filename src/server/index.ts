@@ -1,7 +1,7 @@
 // src/server/index.ts
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { createVideoTool } from '../tools/createVideo.js';
-import { startHttp } from './http';
+import { startHttp } from './http.js';
 import { log } from '../observability/logger.js';
 
 async function main() {
