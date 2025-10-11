@@ -38,7 +38,7 @@ async function main() {
         name: 'create_video',
         arguments: {
             serviceProvider: 'RUNWAY_ML',
-            prompt: 'An aerial shot of a sunny beach in Southern Spain (the beach is narrow i.e. water is quite close to a beach path). The beach path backs onto a few beach restaurants, and there are customers outside on the path with tables and chairs.  The camera zooms into one of those outside tables with 4 men (one man is bald, another man is ginger haired and the other 2 men are brown haired) eating seafood, 3 of them are drinking beers and one is drinking fruit juice (a brown haired man). There accents are from the North of Ireland.',
+            prompt: 'An aerial shot of a sunny beach in Southern Spain (the beach is narrow i.e. water is quite close to a beach path). The beach path backs onto a few beach restaurants, and there are customers outside on the path with tables and chairs.  The camera zooms into one of those outside tables with 4 people eating seafood.',
             model: 'veo3',
             durationSeconds: 8,
             aspectRatio: '1280:720',
