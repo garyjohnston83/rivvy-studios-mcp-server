@@ -1,8 +1,8 @@
 // src/server/index.ts
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { createVideoTool } from '../tools/createVideo';
+import { createVideoTool } from '../tools/createVideo.js';
 import { startHttp } from './http';
-import { log } from '../observability/logger';
+import { log } from '../observability/logger.js';
 
 async function main() {
     const server = new McpServer({ name: 'studio-mcp', version: '1.0.0', requestTimeoutMs: 300_000 });

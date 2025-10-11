@@ -1,4 +1,4 @@
-import { env } from '../config/env';
+import { env } from '../config/env.js';
 
 /** Very simple bearer token check for inbound requests from the LLM host. */
 export function verifyInboundAuth(headers: Record<string, string | string[] | undefined>): void {

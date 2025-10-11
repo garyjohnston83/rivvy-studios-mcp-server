@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { postVideo, type VideoCreationRequest } from '../clients/springClient';
+import { postVideo, type VideoCreationRequest } from '../clients/springClient.js';
 
 // Build a Zod schema from JSON schema (manual mapping for clarity)
 const CreateVideoZ = z.object({

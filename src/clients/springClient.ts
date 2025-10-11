@@ -1,5 +1,5 @@
-import { env } from '../config/env';
-import { springAuthHeaders } from '../auth/signer';
+import { env } from '../config/env.js';
+import { springAuthHeaders } from '../auth/signer.js';
 import { request } from 'undici';
 
 export type VideoCreationRequest = {

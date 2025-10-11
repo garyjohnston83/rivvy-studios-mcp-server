@@ -4,8 +4,8 @@ import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/
 import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { randomUUID } from 'node:crypto';
 import type { StreamableHTTPServerTransportOptions } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
-import { env } from '../config/env';
-import { log } from '../observability/logger';
+import { env } from '../config/env.js';
+import { log } from '../observability/logger.js';
 
 export async function startHttp(server: McpServer) {
     const app = express();
