@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://schemas.example.com/mcp/createVideo.v1.json",
+  "title": "CreateVideoInput",
+  "type": "object",
+  "required": ["prompt", "serviceProvider"],
+  "additionalProperties": false,
+  "properties": {
+    "prompt": {
+      "type": "string",
+      "description": "Text prompt describing the desired video content"
+    },
+    "model": {
+      "type": ["string", "null"],
+      "description": "Provider-specific model id; null uses server default"
+    },
+    "durationSeconds": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Video duration in seconds"
+    },
+    "fps": {
+      "type": ["integer", "null"],
+      "minimum": 12,
+      "maximum": 60,
+      "description": "Frames per second"
+    },
+    "aspectRatio": {
+      "type": ["string", "null"],
+      "description": "Aspect ratio, e.g. 16:9, 9:16, 1:1"
+    },
+    "outputFormat": {
+      "type": ["string", "null"],
+      "description": "Output container/format, e.g. mp4"
+    },
+    "negativePrompt": {
+      "type": ["string", "null"],
+      "description": "What to avoid in generation"
+    },
+    "seed": {
+      "type": ["integer", "null"],
+      "description": "Random seed"
+    },
+    "extraParams": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "description": "Provider-specific overrides"
+    },
+    "pollIntervalSeconds": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Override poll interval; null uses server default"
+    },
+    "maxAttempts": {
+      "type": ["integer", "null"],
+      "minimum": 1,
+      "description": "Override max attempts; null uses server default"
+    },
+    "serviceProvider": {
+      "type": "string",
+      "description": "External service provider to use",
+      "enum": ["GEMINI", "RUNWAY_ML", "ELEVEN_LABS", "TOPAZ_LABS", "MID_JOURNEY"]
+    }
+  }
+}

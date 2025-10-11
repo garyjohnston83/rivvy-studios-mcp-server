@@ -1,0 +1,45 @@
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Build output
+dist/
+build/
+coverage/
+
+# Environment & local configs
+!.env.example
+.env
+.env.*
+.DS_Store
+
+# IDE / Editor
+.idea/
+.vscode/
+*.iml
+
+# OS junk
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Docker
+docker-compose.override.yml
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary files
+tmp/
+temp/
