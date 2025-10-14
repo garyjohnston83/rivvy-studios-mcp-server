@@ -4,7 +4,7 @@ import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { StreamableHTTPClientTransport } from '@modelcontextprotocol/sdk/client/streamableHttp.js';
 
 async function main() {
-    const url = new URL(process.env.MCP_URL ?? 'http://localhost:3333/mcp');
+    const url = new URL(process.env.MCP_URL ?? 'http://localhost:3333/');
     const token = process.env.INBOUND_MCP_TOKEN ?? '';
 
     const transport = new StreamableHTTPClientTransport(url, {
